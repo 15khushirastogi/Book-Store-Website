@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+.bg {
+    filter: blur(8px);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+  
+  .container {
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+    color: #293e69;
+  }
+  
+  .login-heading, .registration-heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .login-form input{
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+  }
+  
+  .login-form input[type="submit"],
+  .login-form input[type="reset"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #293e69;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+textarea{
+  height: 60px;
+  width: 250px;
+  padding: 10px;
+}
+.reg-button{
+  padding: 6px;
+  margin-bottom: 4px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  width: 75%;
+}
+
+.reg-labels{
+  font-weight: bold;
+
+}
+.add-to-cart {
+  background-color:#637aa7;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  width: 80%;
+  height: 200%;
+  align-items: center;
+  display: flex;
+}
+.add-to-cart:hover {
+  background-color: #162136;
+}
+
+.cse-table, .cart-table{
+  border: 5px solid #293e69;
+  border-collapse:collapse;
+  margin-top: 10px;
+  background-color: rgba(174, 180, 241, 0.3);
+}
+.cse-table,.cart-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+.cart-table tbody tr td{
+  font-size: 16px;
+  text-align: center;
+  padding: 20px;
+}
+.cart-table button{
+  background-color:#637aa7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  width: 70%;
+  height: 40px;
+  align-items: center;
+
+}
+.cart-table button:hover{
+  background-color: #2b364d;
+  height: 30px;
+  width: 60%;
+
+}
+
+.home-container {
+  background-color: rgba(232, 233, 242, 0.2);
+  width: 90%;
+  margin: 50px auto;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(22, 18, 18, 0.921);
+  border-radius: 15px;
+  position:relative;
+}
+.home-heading{
+  color: #293e69;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  padding: 10px;
+  margin: 4px;
+  text-shadow:2px 2px #aebbd8;
+}
+.home-content{
+  color: #293e69;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 20px;
+  margin: 6px;
+}
+.price{
+  font-weight: bold;
+  text-align: center;
+}
+.about-book{
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+.nav{
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.nav:hover{
+  color: #dddddd;
+}
+.side-link:link{
+  text-decoration: none;
+  color:#293e69;
+}
+.side-link:active{
+  color: #637aa7;
+}
+.side-link:visited{
+  color: rgb(47, 113, 21);
+}
+.side-link:hover{
+  color: rgb(249, 125, 121);
+}
+.item-quantity{
+  width: 50px; /* Adjust width as needed */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: center;
+}
+th{
+  width: auto;
+  height: 80px;
+  background-color: #406e8e;
+  color: #ced7ea;
+  font-size: larger;
+  font-weight: bolder;
+}
+.registration-form input[type="submit"],
+.registration-form input[type="reset"] {
+    width: 90%;
+    padding: 10px;
+    background-color: #396884;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: larger;
+    margin-bottom: 6px;
+}
+.cart-table{
+  width: 95%;
+  padding: 3rem;
+}
+
+.bill {
+  color:rgb(70, 127, 14); 
+  margin-left: 5rem;
+  margin-top: 3rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

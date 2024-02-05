@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .error-message{
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <img class="bg" src="/bookstore.jpg">
+    <div class="container">
+        <div class="registration-heading">
+            <h1>REGISTRATION</h1>
+        </div>
+        <div class="registration-form" onsubmit="return validateForm()">
+            <center>
+                <table>
+                    <form id="registrationForm">
+                        <tr>
+                            <h3><td><label for="name" class="reg-labels">Name: </label></td></h3>
+                            <td><input type="text" id="name" name="name" class="reg-button" placeholder="Enter your name">
+                                <br>
+                                <span id="firstNameError" class="error-message"></span><br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="password" class="reg-labels">Password: </label></td>
+                            <td><input type="password" id="password" name="password" class="reg-button" placeholder="password">
+                                <br>
+                                <span id="passwordError" class="error-message"></span><br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email" class="reg-labels">E-mail: </label></td>
+                            <td><input type="text" id="email" name="email" class="reg-button" placeholder="abc@gmail.com">
+                                <br>
+                                <span id="emailError" class="error-message"></span><br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="phone" class="reg-labels">Phone No.: </label></td>
+                            <td><input type="tel" id="phone" name="phone" class="reg-button" placeholder="+91XXXXXXXXXX">
+                                <br>
+                                <span id="phoneError" class="error-message"></span><br></td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3"><label for="gender" class="reg-labels">Gender: </label></td>
+                            <td><input type="radio" id="male" name="gender">Male</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="female" name="gender">Female</td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="other" name="gender">Other</td>
+                        </tr>
+                        <tr>
+                            <td><label for="dob" class="reg-labels">Date of Birth: </label></td>
+                            <td><input type="date" id="dob" name="dob" class="reg-button"></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4"><label for="lang" class="reg-labels">Languages Known: </label></td>
+                            <td><input type="checkbox" id="eng" name="english">English</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="hindi" name="hindi">Hindi</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="tamil" name="tamil">Tamil</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="telugu" name="telugu">Telugu</td>
+                        </tr>
+                        <tr>
+                            <td><label for="address" class="reg-labels">Address: </label></td>
+                            <td><textarea id="address" name="address" rows="4" cols="50" class="reg-button" placeholder="About Yourself"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><center><input type="submit" value="Submit"></center></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><center><input type="reset" value="Reset"></center></td>
+                        </tr>
+                    </form>
+                </table>
+            </center>
+        </div>
+    </div>
+    <script src="/registration1.js"></script>
+</body>
+</html>
